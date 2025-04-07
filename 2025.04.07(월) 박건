@@ -1,4 +1,4 @@
---¹®Á¦1
+--Â¹Â®ÃÂ¦1
 select * from student;
 select name||' ''s ID :'|| ID||', WEIGHT is '|| WEIGHT || 'kg' from student;
 select * from emp;
