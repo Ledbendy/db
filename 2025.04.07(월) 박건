@@ -1,4 +1,4 @@
---¹®Á¦1
+--문제1
 select * from student;
 select name||' ''s ID :'|| ID||', WEIGHT is '|| WEIGHT || 'kg' from student;
 select * from emp;
@@ -11,3 +11,18 @@ select ename, sal from emp where sal < 1000;
 select ename, sal, deptno from emp where deptno = 10;
 select ename, sal, sal+100, deptno from emp where deptno = 10;
 select ename, sal, sal*1.1, deptno from emp where deptno = 10;
+select * from emp;
+select ename, hiredate from emp;
+select ename, hiredate from emp where hiredate >= '81/12/25';
+select empno, ename, sal from emp where sal between 2000 and 3000;
+select empno, deptno from emp where deptno in (10,20);
+select empno, deptno from emp where ename in ('KING','FORD');
+select empno, ename, sal from emp where sal LIKE '1%';
+select empno, ename, sal from emp where ename LIKE 'A%';
+select empno, ename, hiredate from emp where hiredate LIKE '%80%';
+select empno, ename, hiredate from emp where ename LIKE '_AR%';
+select * from emp;
+select ename, hiredate, sal from emp where hiredate > '82-01-01' and sal >= 1300;
+select ename, hiredate, sal from emp where hiredate > '82-01-01' or sal >= 1300;
+select * from student;
+select studno, name, deptno1, 1 from student where deptno1 = 101 union select profno, name, deptno, 2 from professor where deptno = 101;
